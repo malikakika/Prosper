@@ -1,0 +1,35 @@
+.toolbar{
+    opacity: 0.7;
+}
+.devider-button{
+    margin: 5px;
+
+}
+.spacer{
+    flex:1 1 auto;
+}
+footer{
+    overflow: hidden;
+    background-color: #00DAD0;
+}
+a:hover{
+    color:#FFFFFF;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.logo_img{
+    width: 50%;
+    
+
+}
+
+.buttons {
+    margin-left: 200px;
+    ;
+}
+
+

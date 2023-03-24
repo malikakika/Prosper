@@ -1,0 +1,13 @@
+@import "~angular-notifier/styles";
+
+.devider-button{
+    margin: 5px;
+
+}
+.spacer{
+    flex:1 1 auto;
+}
+footer{
+    overflow: hidden;
+    background-color: #00DAD0;
+}

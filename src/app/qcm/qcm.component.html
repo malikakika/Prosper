@@ -1,0 +1,74 @@
+<!-- <form [formGroup]="qcmForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" required>
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+
+    <label>
+      Street:
+      <input type="text" formControlName="street">
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+    
+    <label>
+      State:
+      <input type="text" formControlName="state">
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="text" formControlName="zip">
+    </label>
+  </div>
+
+  <div formArrayName="aliases">
+    <h3>Aliases</h3> <button (click)="addAlias()">Add Alias</button>
+
+    <div *ngFor="let alias of aliases.controls; let i=index">
+      <!-- The repeated alias template -->
+      <!-- <label>
+        Alias:
+        <input type="text" [formControlName]="i">
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="!qcmForm.valid">Submit</button>
+</form>
+
+<hr>
+
+
+<p>
+  Form Value: {{ qcmForm.value | json }}
+</p>
+
+
+<p>
+  Form Status: {{ qcmForm.status }}
+</p>
+
+<p>
+  
+</p> --> 
+<div class="container">
+          <form>
+          <app-qcm-element *ngFor="let qcmelement of qcm" [question]="qcmelement.question" [reponse]="qcmelement.reponse"></app-qcm-element>
+          <div class="row mt-5">
+            <div class="col"><button type="submit" mat-raised-button style="width: 100%;background-color: rgb(0, 255, 179);font-weight: bold;">Terminer le QCM</button></div>
+            <div class="col"><button type="reset" mat-raised-button style="width: 100%;background-color: rgb(0, 255, 179);font-weight: bold;">Vider le QCM</button></div>
+          </div>
+        </form>
+</div>
